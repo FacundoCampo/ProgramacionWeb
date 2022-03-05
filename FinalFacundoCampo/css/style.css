@@ -1,0 +1,497 @@
+/*
+COLORES
+PRINCIPAL: #276678
+SECUNDARIO: #1687A7
+CLARO: #D3E0EA
+BLANCO: #F6F5F5
+*/
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto", sans-serif;
+}
+.contenedor {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.img-width {
+  width: 100%;
+}
+.py-4{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.mt-4{
+  margin-top: 1.5rem;
+}
+.text-center{
+  text-align: center;
+}
+.d-block{
+  display: block;
+}
+.d-flex{
+  display: flex;
+}
+.justify-beetwen{
+  justify-content: space-between;
+  gap:30px;
+}
+.inputsModificar{
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    margin-top: 0.5rem;
+    border: none;
+}
+.d-none{
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+.titulo-seccion {
+  margin: 1rem 0;
+  text-align: center;
+}
+/* ENCABEZADO */
+.encabezado {
+  padding: 1rem 0;
+  background-color: #000000da;
+}
+.logo {
+  width: 100px;
+}
+.encabezado .contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.encabezado .nav-link {
+  color: #fff;
+  margin: 0.5rem 0;
+  display: block;
+  padding: 0.5rem;
+}
+.encabezado .nav-active {
+  border-bottom: 1px solid;
+}
+.encabezado .nav-link:hover {
+  opacity: 0.7;
+}
+/* SECCION BIENVENIDA */
+.bienvenida {
+  background: url("../img/fondo-home2.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 50vh;
+  padding: 2rem 0;
+  background-color: #276678;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.bienvenida .contenedor {
+  padding: 1rem;
+  background: #000000da;
+  color: #fff;
+}
+.bienvenida .contenedor h1 {
+  margin-bottom: 1rem;
+}
+.bienvenida .contenedor p {
+  margin-bottom: 0.4rem;
+}
+/* LISTADO HOME */
+.listado-cartelera-home {
+  padding: 2rem 0;
+  background-color: #fff;
+  color: #fff;
+}
+.listado-cartelera-home .columna {
+  text-align: center;
+  margin: 2rem 0;
+  background: #276678;
+  padding: 1rem;
+}
+.listado-cartelera-home .columna img {
+  border-radius: 5px;
+}
+.listado-cartelera-home .columna h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.listado-cartelera-home .columna p{
+  margin-bottom: .8rem;
+}
+.listado-cartelera-home .btn-ver {
+  border-radius: 5px;
+  display: block;
+  max-width: 175px;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #d3e0ea;
+  color: #000;
+}
+.listado-cartelera-home .btn-ver:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+}
+
+/* PIE DE PAGINA */
+.pie-pagina {
+  padding: 2rem 0;
+  background-color: #d3e0ea;
+}
+.pie-pagina .fila {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+.pie-pagina .copyright p {
+  margin-top: 0.5rem;
+}
+.pie-pagina .contacto {
+  margin-top: 0.5rem;
+}
+.pie-pagina .redes {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 25px;
+}
+
+/*
+Pagina LOGIN
+*/
+.bienvenida-login {
+/*  background: url("../img/viaje3-min.jpg") no-repeat center center;
+  background-size: cover; */
+}
+.login{
+  margin: 4rem 0;
+  min-height: 60vh;
+}
+.login form, .obra-compra{
+  min-height: 300px;
+  padding-top: 2rem;
+}
+
+.login .botonera{
+  margin-top: 2rem;
+}
+.login .btn-registro{
+  font-size: 14px;
+  margin-left: 1rem;
+  background-color: #1687a7;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+.login .btn-registro:hover{
+  opacity: .7;
+}
+/*
+Pagina REGISTRO
+*/
+.bienvenida-registro {
+  background: url("../img/viaje2-min.jpg") no-repeat center center;
+  background-size: cover;
+}
+.registro,
+.login {
+  padding: 2rem 0;
+}
+.obra-compra p{
+  margin: .3rem 0;
+}
+.compra{
+  margin-top: 0!important;
+}
+.form-filtrar{
+  background: #276678;
+    max-width: 230px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+.form-filtrar label{
+  margin-bottom: 0.5rem;
+}
+.form-filtrar select{
+  min-width: 100px;
+}
+.form-filtrar button{
+  background-color: #252525;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.form-filtrar button:hover{
+  opacity: .7;
+  cursor: pointer;
+}
+.botonera .btn-login{
+  font-size: 14px;
+  color: #000;
+  margin-left: 1rem;
+}
+.registro form,
+.login form, .obra-compra {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  color: #fff;
+  background: #276678;
+  border-radius: 5px;
+}
+.registro form label,
+.login form label {
+  display: block;
+  width: 100%;
+}
+.registro form input,
+.login input {
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  width: 100%;
+}
+.registro .form-group,
+.login .form-group {
+  width: 80%;
+}
+.registro .btn-registro,
+.login .btn-login {
+  padding: 0.5rem 1rem;
+  background: #d3e0ea;
+  border: none;
+  font-weight: bold;
+}
+.registro .btn-registro:hover,
+.login .btn-login:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+/*
+PAGINA ADMIN
+*/
+.link-nuevo{
+  max-width: 150px;
+    padding: 0.5rem;
+    margin: auto;
+    display: block;
+    background: #d3e0ea;
+    text-align: center;
+    color: #000;
+    margin-bottom : 1rem;
+}
+.form-buscar input{
+  padding: 0.2rem;
+}
+.form-buscar button{
+  padding: 0.4rem 0.7rem;
+  background: #276678;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.form-buscar button:hover{
+  opacity: .7;
+}
+.link-nuevo:hover{
+  transition: all .5s ease;
+  background-color: #276678;
+  color: #fff;
+}
+.bienvenida-admin {
+  background: url("../img/fondo-panel.jpg") no-repeat center center;
+  background-size: cover;
+}
+.abm .fila{
+  max-width: 600px;
+  margin: auto;
+}
+.abm .link-nuevo{
+  background-color: #1687a7;
+  color: #fff;
+}
+.abm .link-nuevo:hover{
+  opacity: .7;
+}
+.listado {
+  display: flex;
+  flex-direction: column;
+}
+.listado .obra {
+
+  padding: 1rem;
+  color: #fff;
+  background: #276678;
+  border: 1px solid;
+  margin: 1rem 0;
+}
+.listado .obra .btn-modificar{
+  color: #fff;
+  background-color: #1687a7;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+.listado .obra .btn-cancelar{
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+.listado .obra .btn-cancelar:hover,.listado .obra .btn-modificar:hover{
+  opacity: .7;
+}
+.listado .obra p {
+  margin: 1rem 0;
+}
+.listado .obra .botones {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.listado .botones a {
+  padding: 0.4rem 0.7rem;
+  color: #fff;
+}
+.listado .botones a:hover {
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+}
+.listado .botones a:last-child {
+  background-color: rgba(255, 0, 0, 0.548);
+}
+.listado .botones a:first-child {
+  background-color: rgba(4, 160, 4, 0.685);
+}
+/* 
+  PAGINA CREAR / MODIFICAR
+*/
+.notificacion {
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border-radius: 5px;
+  background: #d3e0ea;
+  max-width: 500px;
+}
+.notificacion .msg{
+  padding: 0;
+  text-align: center;
+  margin: 1rem 0;
+}
+.notificacion a{
+  display: block;
+    max-width: 130px;
+    padding: 0.5rem;
+    background-color: #276678;
+    color: #fff;
+    margin: auto;
+}
+.notificacion a:hover{
+  transition: all .5s ease;
+  transform: scale(1.1);
+}
+.form-destino form {
+  padding: 1rem;
+  margin: 1.5rem auto;
+  border-radius: 5px;
+  background: #d3e0ea;
+  max-width: 500px;
+}
+.form-destino form input,
+.form-destino form textarea {
+  display: block;
+  width: 100%;
+  padding: .3rem;
+}
+.form-destino form div {
+  margin: 1rem 0;
+}
+.form-destino .btn-modificar,.btn-modificar-cuenta{
+  display: block;
+  margin: auto;
+  padding: 0.4rem 0.8rem;
+  color: #fff;
+  border: none;
+  background: #276678;
+}
+.form-destino .btn-modificar:hover,.btn-modificar-cuenta{
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/* PAGINA OBRAS */
+#formObras, #formCategorias{
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+#formObras label, #formCategorias label{
+  margin: .3rem 0;
+}
+#formCategorias input{
+  margin: .5rem 0;
+}
+#formObras select, #formCategorias select{
+  min-width: 170px;
+}
+@media (min-width: 768px) {
+  .encabezado .menu {
+    display: flex;
+    gap: 20px;
+  }
+  .listado-cartelera-home .fila {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .listado-cartelera-home .fila .columna {
+    width: 30%;
+  }
+  .pie-pagina .fila {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .registro form,
+  .login form,
+  .obra-compra {
+    min-width: 350px;
+    max-width: 400px;
+    margin: auto;
+  }
+}
+@media (min-width: 1024px) {
+  /* PANEL ABM */
+  .listado {
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .listado .obra {
+    width: 31%;
+  }
+}
